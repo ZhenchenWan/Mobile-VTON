@@ -53,7 +53,7 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">Mobile-VTON: High-Fidelity On-Device Virtual Try-On</h1>
-            <div class="is-size-4 publication-conference" style="color: #509ae0; font-weight: bold; font-style: italic; margin-bottom: 20px;">
+            <div class="is-size-3 publication-conference" style="color: #509ae0; font-weight: bold; font-style: italic; margin-bottom: 20px;">
               CVPR 2026
             </div>
             <div class="is-size-5 publication-authors">
@@ -173,9 +173,8 @@
       <img src="static/images/Mobile-VITON_framework.png" alt="Mobile-VTON Framework" width="100%">
       <h2 class="subtitle has-text-centered" style="margin-top: 1.5rem;">
         <strong>Training Overview of Mobile-VTON:</strong> 
-        The <strong>left side</strong> illustrates our <strong>Feature-Guided Adversarial (FGA) Distillation</strong> process, where a high-capacity TeacherNet supervises two lightweight student networks: <strong>GarmentNet</strong> and <strong>TryonNet</strong>. GarmentNet learns to reconstruct garments via feature-level distillation loss $L_{\text{feature}}^{\text{G}}$, while TryonNet is guided by both feature-level loss $L_{\text{feature}}^{\text{T}}$ and adversarial loss $L_{\text{GAN}}$. 
-        <br><br>
-        The <strong>right side</strong> depicts the main training pipeline, where TryonNet and GarmentNet are jointly optimized with garment-aware supervision. A <strong>Light-Adapter</strong> injects fine-grained garment semantics, and the framework utilizes latent concatenation, trajectory-consistency loss $L_{\text{cons}}$, and reconstruction loss $L_{\text{Diff}}$ to achieve high-fidelity, on-device virtual try-on.
+        The <strong>left side</strong> illustrates our <strong>Feature-Guided Adversarial (FGA) Distillation</strong> process, where a high-capacity TeacherNet supervises two lightweight student networks.
+        The <strong>right side</strong> depicts the main training pipeline, where TryonNet and GarmentNet are jointly optimized with garment-aware supervision.
       </h2>
     </div>
   </div>
